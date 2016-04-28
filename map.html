@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- web app as project assignment on NYCDA bootcamp
+basically this is a demo web app that has extending possibility to be mobile app (iOS and Android) in the future
+the app function is to find free concert, free cinema, cheap drinks, and awesome party in Amsterdam
+app also able to share an event by anyone who would like to submit their event.
+design: Arif Kurniawan 
+instructor: Lloyd 
+version: 0.1
+date: 25/04/2016 -->
+
+<html>
+<head>
+	<title>Afreejam - explore like local.., for free! Find the free cinema, concert or party, based on tips from people like you.</title>
+	<link href="afreejam.css" rel="stylesheet" type="text/css" media="all">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel="stylesheet" media="all">
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+	<script>
+		function initMap() {
+		var mapDiv = document.getElementById('map');
+		var map = new google.maps.Map(mapDiv, {
+		center: {lat: 52.364836, lng: 4.881290},
+		zoom: 16
+		});
+		}
+	 </script>
+</head>
+
+<body>
+
+<body>
+
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="index.html">AfreeJam</a>
+			<br />
+			<span class="tag">explore like local.., for free!</span>
+			</h1>
+			<h3><span class="tag">explore like local.., for free!</span></h3>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="map.html" title="">map</a></li>
+				<li><a href="submit.html" title="">submit event</a></li>
+				<li><a href="review.html" title="">write a review</a></li>
+				<li><a href="signup.html" title="">sign up</a></li>
+				<li class="active"><a href="#" title="">Log In</a></li>
+			</ul>
+		</div>
+	</div>
+	
+
+	<!-- This is under just an empty space to give browser better UI-->
+	<div id="content">
+		<div class="content_title"><h1>Amsterdam Events Map</h1></div>
+		<div id="map" class="box"></div>
+	</div>
+</div>
+
+</body>
+</html>
