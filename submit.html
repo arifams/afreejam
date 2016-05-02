@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- web app as project assignment on NYCDA bootcamp
+basically this is a demo web app that has extending possibility to be mobile app (iOS and Android) in the future
+the app function is to find free concert, free cinema, cheap drinks, and awesome party in Amsterdam
+app also able to share an event by anyone who would like to submit their event.
+design: Arif Kurniawan 
+instructor: Lloyd 
+version: 0.1
+date: 25/04/2016 -->
+
+<html>
+<head>
+	<title>Afreejam - explore like local.., for free! Find the free cinema, concert or party, based on tips from people like you.</title>
+	<link href="afreejam.css" rel="stylesheet" type="text/css" media="all">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel="stylesheet" media="all">
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+</head>
+
+<body>
+
+<body>
+
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="index.html">AfreeJam</a>
+			<br />
+			<span class="tag">explore like local.., for free!</span>
+			</h1>
+			<h3><span class="tag">explore like local.., for free!</span></h3>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="map.html" title="">map</a></li>
+				<li class="active"><a href="submit.html" title="">submit event</a></li>
+				<li><a href="review.html" title="">write a review</a></li>
+				<li><a href="#" title="">sign up</a></li>
+				<li><a href="#" title="">Log In</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	
+<div id="content">
+	<div class="content_title">
+		Submit Your Event
+	</div>
+</div>
+
+<div style="overflow: hidden; background-color: white;">
+    <div style="float: left; position: relative; padding: 0 20px 0 20px">Submit your events today with our online form in just 5 minutes. Integrate with our party people around the world. List your event for free. Boost party, reach new audiences, and get your event seen. Start your listing now.
+    <br />
+    <br />
+    </div>
+
+</div>
+
+<style>
+
+</style>
+
+
+<div id="form">
+  <form action="action_page.php" method="post"> <!-- Using method Post as user can post their events -->
+    <label for="ename">Event Name</label>
+    <input type="text" id="enamename" name="eventname">
+
+    <label for="eaddressname">Event Address</label>
+    <input type="text" id="eaddress" name="eventaddress">
+
+    <label for="eaddressname">Event Date</label> <!-- Future feature, pop up calender -->
+    <input type="text" id="edate" name="eventdate">
+
+    <label for="entrance">Entrance</label>
+    <select id="fee" name="fee">
+		<option value="free">Free</option>
+		<option value="ticket">Ticket</option> <!-- Later if user choose this option, it will passed them to another input how much visitors supposed to pay for -->
+    </select>
+
+    <label for="category">Category</label>
+    <select id="category" name="category">
+		<option value="music">Music</option>
+		<option value="movie">Movie</option> 
+		<option value="food">Food</option>
+		<option value="sport">Sport</option>
+		<option value="party">Party</option>
+    	<option value="tour">Tour</option>
+    	<option value="other">Other</option>
+    </select>
+
+	<textarea>
+		Please inform the visitors about your awesome event description
+	</textarea>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+
+	
+
+
+
+</body>
+</html>
