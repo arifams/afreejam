@@ -139,8 +139,17 @@ ol, ul
 {
 	background: #CC0000; /*Up until now I dont think its appropriate color. Too catchy on my perspective. Need revision*/
 	border-radius: 5px;
+	background: #CC0000;
+	border-radius: 5px;
 }
 
+#menu .current_page_item a
+{
+}
+
+#menu .icon
+{
+}
 
 /*********************************************************************************/
 /* Banner                                                                        */
@@ -177,10 +186,10 @@ ol, ul
 {
     position: relative;
     left: 250px; 
-    width: 490px;
     /*Actually I do not want to use left attribute and give its value since it's floating left. 
     It's just because I was desperate to put form in the center area and to make it responsive 
     due to inconsistency of pixel in my ipad*/
+    width: 490px;
     padding: 5px 6px 6px 7px;
     background: #f0f0f0;
     border: 1px solid #ccc;
@@ -235,6 +244,9 @@ ol, ul
 .wrap
 {
 	width: 900px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1em;
+	padding: 10px 0 10px 0;
 }
 
 .box 
@@ -274,15 +286,6 @@ ol, ul
     text-align: center;
 }
 
-#form input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
 
 /*********************************************************************************/
 /* Form 			   				                                           */
@@ -292,6 +295,16 @@ ol, ul
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 40px;
+}
+
+#form input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 #form input[type=submit] {

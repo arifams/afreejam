@@ -15,6 +15,15 @@ date: 25/04/2016 -->
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel="stylesheet" media="all">
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+	<script>
+		function initMap() {
+		var mapDiv = document.getElementById('map');
+		var map = new google.maps.Map(mapDiv, {
+		center: {lat: 52.364836, lng: 4.881290},
+		zoom: 16
+		});
+		}
+	 </script>
 </head>
 
 <body>
@@ -32,9 +41,10 @@ date: 25/04/2016 -->
 		</div>
 		<div id="menu">
 			<ul>
+
 				<li class="active"><a href="map.html" title="">map</a></li>
-				<li><a href="submit.html" title="">submit event</a></li>
-				<li><a href="review.html" title="">write a review</a></li>
+				<li><a href="submit.html" title="">Submit event</a></li>
+				<li><a href="review.html" title="">write review</a></li>
 				<li><a href="#" title="">sign up</a></li>
 				<li><a href="#" title="">Log In</a></li>
 			</ul>
